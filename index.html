@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>growthZ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white tracking-[0.15rem] overflow-hidden">
+    <header class="container mx-auto px-4 py-6 flex justify-between items-center z-20 relative">
+        <div style="width: 10px;"><img src="logo.png" alt="growthZ.ai" srcset=""></div>
+        
+        <!-- Hamburger menu for mobile -->
+        <button id="menu-toggle" class="lg:hidden text-white focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+        
+        <!-- Desktop menu -->
+        <nav class="hidden lg:flex space-x-6 text-xl">
+            <a href="#" class="hover:text-blue-500">Products</a>
+            <a href="#" class="hover:text-blue-500">Tools</a>
+            <a href="#" class="hover:text-blue-500">Resouces</a>
+            <a href="#" class="hover:text-blue-500">Career</a>
+            <a href="#" class="hover:text-blue-500">Pricing</a>
+            <a href="#" class="hover:text-blue-500">About Us</a>
+        </nav>
+        <!-- DENA HAI -->
+        <div class="hidden lg:flex space-x-4 text-xl">
+            <button class="hover:text-blue-500"><a href="login.html">Login</a></button>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"><a href="login.html">Get Started</a></button>
+        </div>
+    </header>
+
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobile-menu" class="fixed inset-0 bg-gray-900 z-10 hidden">
+        <div class="flex flex-col items-center justify-center h-full space-y-6">
+            <a href="#" class="text-xl hover:text-blue-500">Product</a>
+            <a href="#" class="text-xl hover:text-blue-500">Solutions</a>
+            <a href="#" class="text-xl hover:text-blue-500">Templates</a>
+            <a href="#" class="text-xl hover:text-blue-500">Pricing</a>
+            <a href="#" class="text-xl hover:text-blue-500">Enterprise</a>
+            <a href="#" class="text-xl hover:text-blue-500">Partners</a>
+            <button class="text-xl hover:text-blue-500"><a href="login.html">Login</a></button>
+            <button class="bg-bluv-500 text-white px-6 py-2 rounded hover:bg-blue-600"><a href="logi.html">Get Started</a></button>
+        </div>
+    </div>
+
+    <main class="flex  items-center justify-center min-h-screen px-4">
+        <div class="text-center content-wrapper">
+            <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold mb-4">
+                Automate AD 
+                <div class="changebox inline-block overflow-hidden align-bottom">
+                    <span>communication</span>
+                    <span>creatives</span>
+                    <span>campaign</span>
+                    <span>optimization</span>
+                </div>
+            </h1>
+            <p class="text-xl md:text-2xl mb-7">Your own in-house growth engine.</p>
+            <a href="login.html" class="inline-block bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600 transition duration-300">
+                Sign Up Now
+            </a>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <div class="gradient-bg absolute left-0 top-0 -z-10 h-full w-full overflow-hidden opacity-[20%] blur-3xl"
+    style="background: linear-gradient(40deg, rgb(17, 19, 21), rgb(17, 19, 21));">
+        <div class="h-full w-full">
+            <div class="Mix-blend-hard-light absolute -left-[25%] -top-[15%] h-[140%] w-[140%] origin-center opacity-100"
+            style="background: radial-gradient(circle, rgba(133, 127, 249, 0.8) 0px, rgba(133, 127, 249, 0) 50%) no-repeat;">
+            </div>
+            <div class="Mix-blend-hard-light absolute -left-[15%] -top-[35%] h-[100%] w-[100%] opacity-100"
+            style="background: radial-gradient(circle, rgba(189, 140, 255, 0.8) 0px, rgba(189, 140, 255, 0) 50%) no-repeat; transform-origin: calc(50% - 400px) center;">
+            </div>
+            <div class="Mix-blend-hard-light absolute -top-[15%] left-[15%] h-[220%] w-[220%] opacity-70"
+            style="background: radial-gradient(circle, rgba(189, 140, 255, 0.8) 0px, rgba(189, 140, 255, 0) 50%) no-repeat; transform-origin: calc(50% - 200px) center;">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
